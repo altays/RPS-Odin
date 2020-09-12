@@ -10,16 +10,25 @@
 <body>
     <header>Rock, Paper, Scissors!</header>
     <div class="wrapper">
-        <div class = "button-box">
+        <div class="button-box">
             <button class="rock" data-symbol="r">Rock</button>
             <button class="paper" data-symbol="p">Paper</button>
             <button class="scissors" data-symbol="s">Scissors</button>
         </div>
-        <div class = "score-box"> 
-            <div class="user-score"></div>
-            <div class="computer-score"></div>
+        <div class="score-box"> 
+            <div class="score-sub-box">
+                <p>User Score:</p>
+                <p id="user-score">0</p>
+            </div>
+            <div class="score-sub-box">
+                <p>Computer Score:</p>
+                <p id="computer-score">0</p>
+            </div>
+            <div class="winner-box">
+                <p id="winner-display-text">Click a button to play!</p>
+            </div>
         </div>
-        <div class="winner-display"></div>
+        
     </div>
     <script src="assets/script.js"></script>
 </body>
