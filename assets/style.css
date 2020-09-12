@@ -1,0 +1,89 @@
+/* basic styling */
+
+body {
+    font-size: 16px;
+    line-height:1.5;
+    /* font */
+}
+
+a {
+    text-decoration:none;
+}
+
+/* grouped stylings */
+
+
+.button-box {
+    /* flexbox */
+}
+
+.rps-button {
+    /* create a literal button */
+}
+
+.score-box {
+    /* flex box */
+
+}
+
+.score-num {
+    font-size:3rem;
+}
+
+.winner-box {
+    /* flex box */
+}
+
+.wrapper {
+    /* grid */
+
+}
+
+.wallpaper {
+
+}
+
+/* specific stylings */
+
+.contact {
+    font-size: 1.5rem;
+}
+
+header {
+    font-size: 4rem;
+}
+
+.score-box-title {
+    font-size: 2.5rem;
+}
+
+#winner-display-text {
+    font-size: 2rem;
+}
+
+
+#r {
+    /* need image or icon */
+}
+
+#p {
+    /* need image or icon */
+}
+
+#s {
+    /* need image or icon */
+}
+ 
+/* hover effects - move these to animations? */
+
+.rps-button:hover {
+    /* make it bigger */
+}
+
+.rps-button:active {
+    /* make it smaller */
+}
+
+/* responsiveness */
+
+
