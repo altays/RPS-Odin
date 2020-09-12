@@ -6,7 +6,7 @@ window.onload = (e) => {
     let computerScore=0;
 
     // page variables
-    let buttonList = document.getElementsByTagName("button");
+    let buttonList = document.getElementsByClassName("rps-button");
     let userScoreBox = document.getElementById("user-score");
     let computerScoreBox = document.getElementById("computer-score");
     let winnerDisplay = document.getElementById("winner-display-text")
