@@ -1,37 +1,29 @@
-// score variables
-let userScore=0;
-let computerScore=0;
+window.onload = (e) => {
+    e.preventDefault();
 
-window.onload = (event) => {
+    // score variables
+    let userScore=0;
+    let computerScore=0;
 
-    event.preventDefault();
-    console.log('page is fully loaded');
-
+    // page variables
     let buttonList = document.getElementsByTagName("button");
+    let userScoreBox = document.getElementById("user-score");
+    let computerScoreBox = document.getElementById("computer-score");
+    let winnerDisplay = document.getElementById("winner-display-text")
 
-    console.log(buttonList.length)
-
+    // adding event listeners to buttons
     for (let i = 0; i < buttonList.length; i++) {
-        console.log(buttonList[i])
-        buttonList[i].addEventListener("click",confirm)
+        buttonList[i].addEventListener("click",RPS)
     }
     
-
-    // add event listener to each button
-
-    //  on click pull dataset.symbol for the stored letter
-
-    // on click plug stored letter into function
-
-
     function RPS(event) {
         event.preventDefault()
 
         const choices = ["r","p","s"]
 
         let computerSelect = choices[Math.floor(Math.random()*3)];
-        let userChoice = event.target.dataset.symbol;
-        
+        let userSelect = event.target.dataset.symbol;
+
         // helper function for comparing user and computer choices
         function compareChoices(userChoice,computerChoice) {
             // return 1 if user wins, -1 if computer wins, 0 if tie
@@ -77,28 +69,23 @@ window.onload = (event) => {
     function scoring(value) {
         if (value === 1) {
             userScore++;
-            console.log("You won!")
-            console.log(`Your score is ${userScore} and the computer's score is ${computerScore}`)
+            userScoreBox.textContent=userScore;
+            winnerDisplay.textContent=`You won!`;
         } else if (value === 0) {
-            console.log("Tie!")
-            console.log(`Your score is ${userScore} and the computer's score is ${computerScore}`)
+            computerScore++
+            computerScoreBox.textContent=computerScore;
+            winnerDisplay.textContent=`Computer Won!`
         } else {
-            computerScore++;
-            console.log("Computer wins!")
-            console.log(`Your score is ${userScore} and the computer's score is ${computerScore}`)
+            winnerDisplay.textContent=` Tie!`
         }
     }
-
-
-    console.log(`User selection is ${userSelect} and computer selection is ${computerSelect}`)
 
     // comparing choices
     let roundWinner = compareChoices(userSelect,computerSelect)
 
     scoring(roundWinner);
 
-    // roundRun = confirm("Do you want to play another round?");
-}
+    }
 
 
 };
