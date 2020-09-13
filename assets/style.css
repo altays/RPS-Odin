@@ -4,10 +4,16 @@ body {
     font-size: 16px;
     line-height:1.5;
     /* font */
+ 
 }
 
 a {
     text-decoration:none;
+}
+
+i {
+    font-size: 4rem;
+
 }
 
 /* grouped stylings */
@@ -15,28 +21,52 @@ a {
 
 .button-box {
     /* flexbox */
+    justify-content: space-around;
+}
+
+.flex {
+    display: flex;
 }
 
 .rps-button {
     /* create a literal button */
+    border: 2px solid black;
+    font-size: 2rem;
+    height: 10rem;
+    width: 10rem;
+    padding: 2rem;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    
 }
 
 .score-box {
     /* flex box */
-
+    justify-content: space-around;
 }
 
+.score-sub-box {
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+}
 .score-num {
     font-size:3rem;
 }
 
 .winner-box {
     /* flex box */
+    justify-content:center;
 }
 
 .wrapper {
     /* grid */
-
+    min-height:100vh;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-rows: 1fr, 1fr, 1fr, auto;
 }
 
 .wallpaper {
@@ -47,10 +77,13 @@ a {
 
 .contact {
     font-size: 1.5rem;
+    align-items:end;
+    justify-content:center;
 }
 
 header {
     font-size: 4rem;
+    text-align:center;
 }
 
 .score-box-title {
@@ -58,7 +91,7 @@ header {
 }
 
 #winner-display-text {
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 
