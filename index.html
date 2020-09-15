@@ -12,14 +12,17 @@
 <body>
     <div class="wallpaper"></div>
     <div class="wrapper">
-        <header>Rock, Paper, Scissors!</header>
+        <header class="flex">R, P, S!</header>
         <div class="button-box flex">
             <div class="rps-button" id="r" rdata-symbol="r"><i class="far fa-hand-rock"></i></div>
             <div class="rps-button" id="p" data-symbol="p"><i class="far fa-hand-paper"></i></div>
             <div class="rps-button" id="s" data-symbol="s"><i class="far fa-hand-scissors"></i></div>
         </div>
         <div class="winner-box flex">
-            <p id="winner-display-text">Click a button to play!</p>
+            <p id="winner-display-text">Click a button!</p>
+        </div>
+        <div class="flex round-number">
+            <p>Round number: <span id="round-number-text">0</span></p>
         </div>
         <div class="score-box flex"> 
             <div class="score-sub-box flex">
