@@ -4,7 +4,6 @@ body {
     font-size: 16px;
     line-height:1.5;
     /* font */
- 
 }
 
 a {
@@ -18,7 +17,6 @@ i {
 
 /* grouped stylings */
 
-
 .button-box {
     /* flexbox */
     justify-content: space-around;
@@ -26,6 +24,12 @@ i {
 
 .flex {
     display: flex;
+}
+
+.round-number {
+    font-size: 3rem;
+    justify-content:center;
+    align-items:center;
 }
 
 .rps-button {
@@ -39,6 +43,7 @@ i {
     display:flex;
     justify-content:center;
     align-items:center;
+    background-color:white;
     
 }
 
@@ -69,21 +74,18 @@ i {
     grid-template-rows: 1fr, 1fr, 1fr, auto;
 }
 
-.wallpaper {
-
-}
-
 /* specific stylings */
 
 .contact {
-    font-size: 1.5rem;
-    align-items:end;
+    font-size: 2rem;
+    align-items:center;
     justify-content:center;
 }
 
 header {
-    font-size: 4rem;
-    text-align:center;
+    font-size: 3.5rem;
+    justify-content: center;
+    align-items:center;
 }
 
 .score-box-title {
@@ -94,17 +96,16 @@ header {
     font-size: 3rem;
 }
 
-
-#r {
-    /* need image or icon */
+.wallpaper-win {
+    background-color:green;
 }
 
-#p {
-    /* need image or icon */
+.wallpaper-lose {
+    background-color:red;
 }
 
-#s {
-    /* need image or icon */
+.wallpaper-neutral{
+    background-color:white;
 }
  
 /* hover effects - move these to animations? */
@@ -116,6 +117,8 @@ header {
 .rps-button:active {
     /* make it smaller */
 }
+
+
 
 /* responsiveness */
 
