@@ -1,6 +1,6 @@
 # Rock Paper Scissors
 
-[!ODIN-RPS](https://img.shields.io/badge/ODIN-RPS-green)
+![ODIN-RPS](https://img.shields.io/badge/ODIN-RPS-green)
 
 ***
 
@@ -21,7 +21,7 @@ This project was created for the Odin Project Web Dev 101 Course. It utilizes DO
 
 ## Installation
 
-The app can either be run at _____, or cloned and run locally.
+The app can either be run at https://altays.github.io/RPS-Odin/, or cloned and run locally.
 
 ***
 
