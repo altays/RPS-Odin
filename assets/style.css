@@ -64,6 +64,7 @@ i {
 .winner-box {
     /* flex box */
     justify-content:center;
+
 }
 
 .wrapper {
@@ -72,6 +73,7 @@ i {
     display: grid;
     grid-gap: 20px;
     grid-template-rows: 1fr, 1fr, 1fr, auto;
+    position: relative;
 }
 
 /* specific stylings */
@@ -106,6 +108,12 @@ header {
 
 .wallpaper-neutral{
     background-color:white;
+}
+
+#wallpaper {
+    position:fixed;
+    width: 100%;
+    height: 100%;
 }
  
 /* hover effects - move these to animations? */
